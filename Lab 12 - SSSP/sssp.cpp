@@ -84,7 +84,7 @@ void dijkstra(int G[max][max] , int n , int startnode){
     }
 
     //calculate average time taken
-    int sum = 0;
+    double sum = 0;
     for (int i : dist){
         sum += i;
     }
@@ -100,12 +100,12 @@ int main(){
         {10 , 0 , 10 , 30 , 0 , 0},
         {0 , 10 , 0 , 12 , 5 , 0},
         {0 , 30 , 12 , 0 , 0 , 20},
-        {0 , 15 , 5 , 0 , 0 , 0},
+        {15, 0 , 5 , 0 , 0 , 0},
         {5 , 0 , 0 , 20 , 0 , 0}
     };
 
     int n = 6;
-    int u = 5;
+    int u =4;
 
     dijkstra(G , n , u);
 
